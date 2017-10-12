@@ -5,3 +5,5 @@ eval "$(pyenv init -)"
 
 # ros
 source /opt/ros/kinetic/setup.bash
+source $HOME/ros/devel/setup.bash
+

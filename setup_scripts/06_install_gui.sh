@@ -8,5 +8,6 @@ sudo apt-get install -y vnc4server
 vncserver :10
 vncserver -kill :10
 
+cp $HOME/git/necst/config/.vnc-xstartup $HOME/.vnc/xstartup
 
 

@@ -1,4 +1,4 @@
 #! /bin/sh
 
-sudo apt-get emacs -y
-sudo apt-get install openssh-server
+sudo apt-get install emacs -y
+sudo apt-get install openssh-server -y

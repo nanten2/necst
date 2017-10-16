@@ -1,6 +1,7 @@
 #! /bin/sh
 
 # .bashrc
+cp $HOME/.bashrc $HOME/.bashrc.original
 cp $HOME/git/necst/config/.bashrc $HOME/.bashrc
 
 # vnc

@@ -2,7 +2,6 @@
 
 # pyenv 
 # -----
-
 # install
 git clone git://github.com/yyuu/pyenv.git $HOME/.pyenv
 git clone https://github.com/yyuu/pyenv-pip-rehash.git $HOME/.pyenv/plugins/pyenv-pip-rehash
@@ -16,10 +15,14 @@ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> $HOME/.bashrc
 echo 'eval "$(pyenv init -)"' >> $HOME/.bashrc
 source $HOME/.bashrc
 
+# setup temporary
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 
 # anaconda
 # --------
-
 # install
 pyenv install anaconda3-4.4.0
 pyenv global anaconda3-4.4.0

@@ -2,7 +2,7 @@
 
 # .bashrc
 cp $HOME/.bashrc $HOME/.bashrc.original
-cp $HOME/git/necst/config/.bashrc $HOME/.bashrc_melodic
+cp $HOME/git/necst/config/.bashrc_melodic $HOME/.bashrc
 
 # vnc
 vncserver :20

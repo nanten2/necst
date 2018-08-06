@@ -128,3 +128,9 @@ export PYTHONPATH=${PYTHONPATH}:$HOME/ros/src/necst/scripts/controller:$HOME/ros
 # ---
 source /opt/ros/kinetic/setup.bash
 source $HOME/ros/devel/setup.bash
+
+# monitor
+# -------
+export PYTHONPATH=$PYTHONPATH:$HOME/ros/devel/lib/python2.7/dist-packages
+export ROS_PACKAGE_PATH=$HOME/ros/src:$ROS_PACKAGE_PATH
+

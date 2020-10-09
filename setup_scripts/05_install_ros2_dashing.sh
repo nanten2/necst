@@ -1,13 +1,13 @@
 #!/bin/sh
 
-sudo locale-gen en_US en_US.UTF-8
-sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
-export LANG=en_US.UTF-8
+# sudo locale-gen en_US en_US.UTF-8
+# sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+# export LANG=en_US.UTF-8
 
 sudo apt-get update
-sudo apt-get install curl gnupg2 lsb-release
+sudo apt-get install curl gnupg2 lsb_release
 curl http://repo.ros2.org/repos.key | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `lsb-release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
+sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
 sudo apt-get update
 
 export ROS_DISTRO=dashing # foxy
